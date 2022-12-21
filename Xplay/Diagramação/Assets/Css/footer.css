@@ -1,0 +1,88 @@
+.footer {
+    padding: 50px 0;
+}
+
+.footer .row {
+    row-gap: 50px;
+}
+
+.footer__info {
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+}
+
+.footer__icon {
+    width: 23px;
+    height: 28px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.location__icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='33' viewBox='0 0 27 33' fill='none'%3E%3Cpath d='M18.24 13.6C18.24 14.8306 17.7511 16.0108 16.8809 16.8809C16.0108 17.7511 14.8306 18.24 13.6 18.24C12.3694 18.24 11.1892 17.7511 10.319 16.8809C9.44882 16.0108 8.95996 14.8306 8.95996 13.6C8.95996 12.3694 9.44882 11.1892 10.319 10.319C11.1892 9.44882 12.3694 8.95996 13.6 8.95996C14.8306 8.95996 16.0108 9.44882 16.8809 10.319C17.7511 11.1892 18.24 12.3694 18.24 13.6V13.6Z' stroke='%23B41B17' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.2 13.6C25.2 24.6463 13.6 31 13.6 31C13.6 31 2 24.6463 2 13.6C2 10.5235 3.22214 7.57298 5.39756 5.39756C7.57298 3.22214 10.5235 2 13.6 2C16.6765 2 19.627 3.22214 21.8024 5.39756C23.9779 7.57298 25.2 10.5235 25.2 13.6V13.6Z' stroke='%23B41B17' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.fone__icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29' fill='none'%3E%3Cpath d='M12.6927 7.30123L8.46401 2.42001C7.97651 1.85751 7.08276 1.86001 6.51652 2.42751L3.03903 5.91124C2.00404 6.94748 1.70779 8.48622 2.30654 9.71997C5.88354 17.1261 11.8565 23.1075 19.2577 26.6949C20.4902 27.2936 22.0277 26.9974 23.0627 25.9611L26.5727 22.4449C27.1414 21.8761 27.1427 20.9774 26.5752 20.4899L21.6752 16.2837C21.1627 15.8437 20.3664 15.9012 19.8527 16.4162L18.1477 18.1237C18.0604 18.2151 17.9455 18.2755 17.8206 18.2953C17.6958 18.3152 17.5678 18.2935 17.4565 18.2337C14.6695 16.6288 12.3577 14.314 10.7565 11.525C10.6965 11.4134 10.6748 11.2852 10.6947 11.1602C10.7146 11.0351 10.7749 10.9199 10.8665 10.8325L12.5665 9.13122C13.0815 8.61372 13.1377 7.81373 12.6927 7.29998V7.30123Z' stroke='%23B41B17' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.email__icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='25' viewBox='0 0 32 25' fill='none'%3E%3Cpath d='M28.125 0H6.25C4.52656 0 3.125 1.40156 3.125 3.125V10.9375H6.25V6.25L16.25 13.75C16.5206 13.9526 16.8495 14.0621 17.1875 14.0621C17.5255 14.0621 17.8544 13.9526 18.125 13.75L28.125 6.25V20.3125H15.625V23.4375H28.125C29.8484 23.4375 31.25 22.0359 31.25 20.3125V3.125C31.25 1.40156 29.8484 0 28.125 0ZM17.1875 10.5469L7.29062 3.125H27.0844L17.1875 10.5469Z' fill='%23B41B17'/%3E%3Cpath d='M0 12.5H10.9375V15.625H0V12.5ZM3.125 17.1875H12.5V20.3125H3.125V17.1875ZM7.8125 21.875H14.0625V25H7.8125V21.875Z' fill='%23B41B17'/%3E%3C/svg%3E");
+}
+
+.footer__logo,
+.footer .redes {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.footer__info--link {
+    color: var(--cor-chumbo);
+    font-size: var(--body-md);
+    font-weight: var(--fw-regular);
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer__info--link:hover, .footer__info--link:focus {
+    color: var(--cor-vermelho);
+    text-decoration: underline;
+}
+
+.redes__footer--link {
+    color: var(--cor-chumbo);
+    font-size: var(--header-sm);
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.redes__footer--link:hover, .redes__footer--link:focus  {
+    color: var(--cor-vermelho)
+}
+
+.footer-copy {
+    border-top: 1px solid var(--footer-borda);
+    padding-top: 15px;
+    margin: 0 1px;
+}
+
+.copy__text,
+.assinatura__link {
+    color: var(--tx-branco);
+    font-size: var(--body-xs);
+    font-weight: var(--fw-light);
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .footer__info {
+        grid-template-columns: 1fr auto;
+    }
+    .footer__info--link {
+        text-align: left;
+    }
+}

@@ -1,0 +1,44 @@
+.app__section {
+    background-image: url(../Img/background-app.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    background-position-x: center;
+    
+}
+
+.app__section .main__title {
+    line-height: 1;
+    font-size: var(--body-lg)
+}
+
+.app__section .main__title span {
+    font-size: 2em;
+}
+
+.download__links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (min-width: 550px){
+    .app__section {
+        padding: 100px 0;
+    }
+    .app__section .main__title {
+        font-size: var(--header-xs);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .app__section {
+        background-image: url(../Img/background-app-desktop.png);
+        padding: 100px 0;
+    }
+    .download__links {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+}

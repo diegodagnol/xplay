@@ -1,0 +1,33 @@
+.mapa {
+    position: relative;
+}
+
+.search__map {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--color-white);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    height: 50px;
+    width: 395px;
+    max-width: 90%;
+}
+
+.search__map input {
+    border: none;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: 0;
+    padding: 10px 0 10px 20px
+}
+
+.search__map .btn__search--map {
+    background: none;
+    border: none;
+    outline: 0;
+    padding: 0 15px;
+    color: var(--cor-vermelho)
+}

@@ -1,0 +1,157 @@
+:root {
+    --cor-vermelho: #B41B17;
+    --cor-vermelho-claro: #ED462F;
+    --cor-chumbo: #333333;
+    --cor-cinza-claro: #808080;
+    --color-white: #fff;
+
+    --bg-body: #ffffff;
+    --bg-header-plano: #3A75CD;
+    --bg-body-plano: #F3F3F3;
+    --bg-topo: #F8F8F8;
+
+    --body-xs: 0.7rem;
+    --body-sm: 0.85rem;
+    --body-md: 1rem;
+    --body-lg: 1.125rem;
+    --body-lgg: 1.2rem;
+    --body-xl: 1.25rem;
+
+    --header-xxs: 1.31rem;
+    --header-xs: 1.5rem;
+    --header-sm: 1.6rem;
+    --header-md: 1.875rem;
+    --header-xl: 2.5rem;
+    --header-xxl: 3rem;
+
+    --tx-white: #fff;
+    --tx-azul: #253785;
+    --tx-azul-claro: #1c36a6;
+    --tx-cinza: #7b7b7b;
+    --tx-cinza-dark: #484849;
+
+    --logo: url("../Img/logo.svg");
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-primaria) #fff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--cor-vermelho);
+    border-radius: 11px;
+    border: 3px none #ffffff;
+}
+
+body {
+    --bs-body-font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg-body);
+}
+
+p {
+    color: var(--cor-chumbo);
+    font-size: var(--body-sm);
+}
+
+.main__title {
+    color: var(--cor-chumbo);
+    font-size: var(--header-md);
+    font-weight: var(--fw-light);
+    text-align: center;
+}
+
+.main__title strong {
+    font-weight: var(--fw-bold);
+}
+
+.bg-topo {
+    background-color: var(--bg-topo);
+}
+.page__title--box {
+    margin-top: 150px
+}
+
+.page__title {
+    color: var(--cor-chumbo);
+    font-size: var(--header-xl);
+    font-weight: var(--fw-light);
+}
+
+.page__title span {
+    color: var(--cor-vermelho);
+    font-weight: var(--fw-bold);
+}
+
+
+.fixed__whatsapp {
+    position: fixed;
+    bottom: 5%;
+    right: 1.5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 11px 43px 0px rgba(0, 0, 0, 0.36);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    animation: whats 4s infinite;
+    background: #25D366;
+}
+
+.fixed__whatsapp:hover {
+    background: #075E54;
+}
+
+.fixed__whatsapp i {
+    color: var(--tx-white);
+    font-size: var(--header-md)
+}
+
+@media(max-width: 768px) {
+    .fixed__whatsapp {
+        right: 3%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .page__title--box {
+        margin-top: 200px
+    }
+}
+
+@keyframes whats {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}

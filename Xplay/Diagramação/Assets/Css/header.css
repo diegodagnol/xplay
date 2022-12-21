@@ -1,0 +1,216 @@
+.logo {
+    --logo: url("../Img/logo-padrao.svg");
+    background: var(--logo) center center no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 129px;
+    height: 50px;
+    position: relative;
+    top: 3px;
+}
+
+.header, .navbar-brand, .btn__open--menu {
+    z-index: 9;
+}
+
+.header {
+    background: var(--bg-header);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__open--menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+    box-shadow: none !important;
+    border: none;
+    background: none;
+    outline: 0;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.btn__open--menu .bar {
+    width: 29px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--cor-chumbo);
+    transition: all 300ms ease-in-out;
+    opacity: 1;
+}
+
+.btn__open--menu .bar:nth-child(2) {
+  width: 21px;
+}
+
+.btn__open--menu.show .bar:nth-child(1) {
+    transform: rotate(45deg) translate(-6.8px, -8px);
+    transform-origin: top left;
+}
+.btn__open--menu.show .bar:nth-child(2) {
+    transform: rotate(-45deg) ;
+    transform-origin: bottom left;
+    width: 29px;
+}
+
+.btn__open--menu.show .bar {
+    background-color: var(--color-white);
+}
+
+.menu .navbar-nav {
+    gap: 25px;
+}
+
+.levelOne__link{
+    color: var(--tx-white);
+    font-weight: var(--fw-bold);
+    font-size: var(--header-xxs);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.social__medias {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.social__medias .social__medias--link {
+    color: var(--color-white);
+    font-size: var(--header-sm);
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.levelOne__link:hover, .levelOne__link:focus,
+.social__medias--link:hover, .social__medias--link:focus,
+.header.scrolled .levelOne__link:hover, .header.scrolled  .levelOne__link:focus,
+.header.scrolled .social__medias--link:hover, .header.scrolled  .social__medias--link:focus {
+    color: var(--cor-vermelho)
+}
+
+.header.scrolled {
+    background-color: var(--color-white);
+    -webkit-box-shadow: 0px -2px 26px 9px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -2px 26px 9px rgba(0,0,0,0.2);
+    box-shadow: 0px -2px 26px 9px rgba(0,0,0,0.2);
+}
+
+.header.scrolled .logo {
+    --logo: url("../Img/logo-padrao.svg");
+}
+
+.header.header.scrolled .btn__open--menu:not(.show) .bar {
+    background-color: var(--cor-chumbo);
+}
+
+.header .logo.show {
+    --logo: url("../Img/logo-home.svg");
+}
+
+@media screen and (max-width:992px){
+    .header {
+        padding: 20px 0;
+        
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(134.52deg, #832FED 25.21%, #ED462F 149.05%);
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 100px;
+        align-items: center;
+    }
+    .menu.show {
+        display: flex;
+    }
+    .logo-desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:993px){
+    .navbar-header {
+       align-items: baseline;
+    }
+
+    .social__medias {
+        align-items: flex-end;
+    }
+
+    .btn__open--menu, .logo-mobile {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .menu .navbar-nav {
+        flex-direction: row;
+    }
+
+    .header.scrolled .menu {
+        align-items: center;
+    }
+
+    .header.scrolled .levelOne__link, .header.scrolled .social__medias--link {
+        color: var(--cor-chumbo);
+   
+        padding: 50px 0 20px 0;
+    }
+
+    .social__medias .social__medias--link {
+        color: var(--cor-chumbo);
+    }
+
+    .levelOne__link {
+        padding: 100px 0 0 0;
+        font-size: var(--body-md);
+        font-weight: var(--fw-regular);
+        text-transform: none;
+        color: var(--cor-chumbo);
+    }
+
+    .menu .navbar-nav {
+        gap: 50px;
+    }
+
+    .levelOne__link.active {
+        color: var(--cor-vermelho);
+        font-weight: var(--fw-bold);
+        position: relative;
+    }
+
+    .levelOne__link.active::before {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: var(--cor-vermelho);
+        position: absolute;
+        top: 0;
+    }
+}
+
+
