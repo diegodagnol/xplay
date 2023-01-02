@@ -6,6 +6,7 @@
 .swiper-planos .swiper-wrapper {
     padding: 25px 0;
 }
+
  
 .plano__card {
     background: var(--bg-body-plano);
@@ -16,6 +17,7 @@
     background: var(--bg-header-plano);
     border-radius: 18.4269px 88.4492px ;
     position: relative;
+    box-shadow: inset 0px 0px 24px -3px rgba(0, 0, 0, 0.15);
 }
 
 .plano__giga {
@@ -38,7 +40,12 @@
 }
 
 .plano__body {
-   padding: 30px 40px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
 }
 
 .plano__infos p {
@@ -91,9 +98,9 @@
     color: var(--cor-vermelho);
 }
 
-.plano__mais--vendido{
-    transform: scale(1.05);
-}
+/*.plano__mais--vendido{
+    width: 300px;
+}*/
 
 .plano__mais--vendido .plano__header, .plano__mais--vendido .plano__price {
     background: #0B3573;
@@ -194,7 +201,6 @@
     .swiper-planos {
         padding: 0 70px;
     }
-  
 }
 
 @media screen and (min-width: 992px){
@@ -213,6 +219,19 @@
     .plano__description--box {
         overflow-y: scroll;
         max-height: 500px;
+    }
+
+    .swiper-planos.swiper-autoheight .swiper-wrapper {
+        align-items: center;
+    }
+    .swiper-planos .swiper-slide {
+        width: calc(100% / 5 - 25px) !important;
+    }
+    .swiper-planos .swiper-slide.slide-plano__mais--vendido {
+        width: calc(100% / 5) !important;
+    }
+    .plano__card.plano__mais--vendido {
+        height: 580px;
     }
 }
 

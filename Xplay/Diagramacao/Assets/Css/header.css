@@ -17,7 +17,7 @@
     background: var(--bg-header);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     transition: all 300ms ease-in-out;
 }
 
@@ -186,7 +186,7 @@
     }
 
     .levelOne__link {
-        padding: 100px 0 0 0;
+        padding: 60px 0 0 0;
         font-size: var(--body-md);
         font-weight: var(--fw-regular);
         text-transform: none;

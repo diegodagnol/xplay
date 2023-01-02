@@ -1,9 +1,9 @@
 var swiper = new Swiper(".swiper-planos", {
   slidesPerView: 1,
   spaceBetween: 20,
-  slidesPerView: "auto",
   centeredSlides: true,
   loop: true,
+  autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -14,8 +14,9 @@ var swiper = new Swiper(".swiper-planos", {
       spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 5,
-      spaceBetween: 30,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 17,
     },
   },
 });
